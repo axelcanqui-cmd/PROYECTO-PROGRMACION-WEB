@@ -1,0 +1,103 @@
+<!--AXEL MARCELO CANQUI TICONA --> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra </title>
+</head>
+<body>
+
+    <header>
+        <h1>QANATHI SHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Finalizar Compra</h2>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="documento">Documento de Identidad</label>
+                <input type="text" id="documento" name="documento" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dirección de Envío</legend>
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <label for="estado">Estado/Provincia</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <label for="codigo-postal">Código Postal</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" required>
+
+                <label for="pais">País *</label>
+                <select id="pais" name="pais" required>
+                    <option value="">Seleccione un país</option>
+                    <option value="bo">Bolivia</option>
+                    <option value="ar">Argentina</option>
+                    <option value="br">Brasil</option>
+                    <option value="cl">Chile</option>
+                    <option value="co">Colombia</option>
+                    <option value="mx">Mexico</option>
+                    <option value="pe">Peru</option>
+                    <option value="us">Estados Unidos</option>
+                </select>
+
+                <label for="notas">Notas adicionales</label>
+                <textarea id="notas" name="notas" rows="3" placeholder="Instrucciones especiales para la entrega"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Método de Pago</legend>
+                <input type="radio" id="tarjeta" name="metodo-pago" value="tarjeta" checked>
+                <label for="tarjeta">Tarjeta de Crédito/Débito</label><br>
+
+                <input type="radio" id="transferencia" name="metodo-pago" value="transferencia">
+                <label for="transferencia">Transferencia Bancaria</label><br>
+
+                <input type="radio" id="efectivo" name="metodo-pago" value="efectivo">
+                <label for="efectivo">Pago contra entrega</label>
+            </fieldset>
+
+            <button type="submit">Confirmar Compra</button>
+            <a href="carrito.html"> Volver al carrito</a>
+        </form>
+    </main>
+
+    <footer>
+        <p>QANATHI SHOP &copy; 2025</p>
+        <nav>
+            <a href="#">Facebook</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">YouTube</a> |
+            <a href="#">Instagram</a>
+        </nav>
+    </footer>
+</body>
+</html>
