@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.barra-principal {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.contenido-barra {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.titulo-barra {
+    font-size: 24px;
+}
+
+.menu-principal {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-principal a:hover {
+    text-decoration: underline;
+}
+
+
+.caja-general {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.titulo-principal {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+
+.formulario-compra {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.seccion-datos {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.seccion-datos legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.1);
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+
+.opciones-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcion-pago {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.opcion-pago:hover {
+    border-color: #3498db;
+    background: #f8f9fa;
+}
+
+.opcion-pago input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.opcion-pago label {
+    cursor: pointer;
+    margin: 0;
+    font-weight: normal;
+}
+
+.acciones-formulario {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.boton-confirmar {
+    flex: 1;
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.boton-confirmar:hover {
+    background: #229954;
+}
+
+.boton-volver {
+    background: #95a5a6;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.boton-volver:hover {
+    background: #7f8c8d;
+}
+
+.pie-pagina {
+    background: #2c3e50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenido-pie {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenido-pie p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.redes-pie {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.redes-pie a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.redes-pie a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+@media (max-width: 768px) {
+    .contenido-barra {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-principal {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .formulario-compra {
+        padding: 20px;
+    }
+
+    .seccion-datos {
+        padding: 20px;
+    }
+
+    .acciones-formulario {
+        flex-direction: column;
+    }
+
+    .boton-confirmar,
+    .boton-volver {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caja-general {
+        max-width: 700px;
+    }
+}
