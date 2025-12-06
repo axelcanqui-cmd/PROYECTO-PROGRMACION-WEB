@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAIT SHOP | Productos Electrónicos y Accesorios</title>
+    <link rel="stylesheet" href="cs/index.css">
+    <script src="js/index.js"></script>
+    <meta name="description" content="WAIT SHOP ofrece productos electrónicos, accesorios y artículos de tecnología a precios accesibles. Descubre nuestras ofertas.">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <div class="barra-superior">
+            <label for="menu-toggle" class="icono-menu">☰</label>
+            <div class="logo-sitio">
+                <img src="W.png" alt="Logo de WAIT ">
+                WAIT
+            </div>
+            <nav class="menu-principal">
+                <a href="#productos">Electrónicos</a>
+                <a href="#productos">Accesorios</a>
+                <a href="#productos">Gaming</a>
+                <a href="#productos">OFICINA</a>
+            </nav>
+            <div class="acciones-header">
+                <a href="carrito.html">
+                    Carrito
+                    <span class="contador-carrito" id="contador">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="menu-movil">
+            <a href="#productos">Electrónicos</a>
+            <a href="#productos">Accesorios</a>
+            <a href="#productos">Gaming</a>
+            <a href="#productos">OFICINA</a>
+        </div>
+    </header>
+
+    <section class="seccion-presentacion">
+        <div class="presentacion-contenido">
+            <div class="texto-presentacion">
+                <h1>WAIT STORE</h1>
+                <p>Productos electrónicos y accesorios a precios accesibles.</p>
+                <a href="#productos" class="boton-explorar">Ver productos</a>
+            </div>
+            <div class="logo-derecha">
+                <img src="W.png" alt="Logo de WAIT SHOP">
+            </div>
+        </div>
+    </section>
+
+    <main class="seccion-productos" id="productos">
+        <h2>Ofertas Destacadas</h2>
+        <div class="area-filtros">
+            <select class="select-tipo" id="filtro-categoria">
+                <option value="Todos">Selecciona categoría</option>
+                <option value="Electrónicos">Electrónicos</option>
+                <option value="Accesorios">Accesorios</option>
+                <option value="Gaming">Gaming</option>
+                <option value="OFICINA">OFICINA</option>
+            </select>
+        </div>
+        <div class="lista-productos">
+            <article class="tarjeta-producto" data-nombre="Mouse Logitec" data-precio="18" data-categoria="Accesorios" data-imagen="Producto 1.jpg">
+                <img src="Producto 1.jpg" class="imagen-producto" alt="Mouse Logitec">
+                <h3>Mouse Logitec</h3>
+                <p>Accesorios - Stock disponible</p>
+                <div class="precio-producto">18 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="CPU RIZEN 5" data-precio="40" data-categoria="Gaming" data-imagen="Producto 2.jpeg">
+                <img src="Producto 2.jpeg" class="imagen-producto" alt="CPU RIZEN 5">
+                <h3>CPU RIZEN 5</h3>
+                <p>Gaming - Stock disponible</p>
+                <div class="precio-producto">40 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Silla de Escritorio" data-precio="10" data-categoria="OFICINA" data-imagen="Producto 4.jpg">
+                <img src="Producto 4.jpg" class="imagen-producto" alt="Silla de Escritorio">
+                <h3>Silla de Escritorio</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">10 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Escritorio" data-precio="99" data-categoria="OFICINA" data-imagen="Producto 5.jpg">
+                <img src="Producto 5.jpg" class="imagen-producto" alt="Escritorio">
+                <h3>Escritorio</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">99 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="pie-contenido">
+            <div class="pie-bloque">
+                <h4>Redes Sociales</h4>
+                <div class="iconos-redes">
+                    <a href="#">f</a>
+                    <a href="#">in</a>
+                    <a href="#">yt</a>
+                    <a href="#">ig</a>
+                </div>
+            </div>
+            <div class="pie-bloque">
+                <h4>Conócenos</h4>
+                <a href="#">Acerca de nosotros</a><br>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+            <div class="pie-bloque">
+                <h4>Soporte</h4>
+                <a href="#">Ayuda</a><br>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
