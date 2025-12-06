@@ -3,53 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>QANATHI SHOP | Productos Electrónicos y Accesorios</title>
-
-    <meta name="description" content="QANATHI SHOP ofrece productos electrónicos, accesorios y artículos de tecnología a precios accesibles. Descubre nuestras ofertas.">
-
+    <title>WAIT SHOP | Productos Electrónicos y Accesorios</title>
     <link rel="stylesheet" href="cs/index.css">
+    <script src="js/index.js"></script>
+    <meta name="description" content="WAIT SHOP ofrece productos electrónicos, accesorios y artículos de tecnología a precios accesibles. Descubre nuestras ofertas.">
 </head>
 <body>
     <header>
+        <input type="checkbox" id="menu-toggle">
         <div class="barra-superior">
-
             <label for="menu-toggle" class="icono-menu">☰</label>
-            <input type="checkbox" id="menu-toggle">
-
-            <div class="logo-sitio">QANATHI SHOP</div>
-
+            <div class="logo-sitio">
+                <img src="" alt="Logo de WAIT SHOP">
+                WAIT
+            </div>
             <nav class="menu-principal">
                 <a href="#productos">Electrónicos</a>
                 <a href="#productos">Accesorios</a>
                 <a href="#productos">Gaming</a>
+                <a href="#productos">OFICINA</a>
             </nav>
-
             <div class="acciones-header">
                 <a href="carrito.html">Carrito</a>
             </div>
         </div>
-
         <div class="menu-movil">
             <a href="#productos">Electrónicos</a>
             <a href="#productos">Accesorios</a>
             <a href="#productos">Gaming</a>
+            <a href="#productos">OFICINA</a>
         </div>
     </header>
+
     <section class="seccion-presentacion">
-        <h1>Bienvenido a QANATHI SHOP</h1>
-        <p>Productos electrónicos y accesorios a precios accesibles.</p>
-        <a href="#productos" class="boton-explorar">Ver productos</a>
+        <div class="presentacion-contenido">
+            <div class="texto-presentacion">
+                <h1>WAIT SHOP</h1>
+                <p>Productos electrónicos y accesorios a precios accesibles.</p>
+                <a href="#productos" class="boton-explorar">Ver productos</a>
+            </div>
+            <div class="logo-derecha">
+                <img src="https://m.media-amazon.com/images/I/81n1T4CYfmL._AC_UL480_FMwebp_QL65_.jpg" alt="Logo de WAIT SHOP">
+            </div>
+        </div>
     </section>
+
     <main class="seccion-productos" id="productos">
         <h2>Ofertas Destacadas</h2>
-
         <div class="area-filtros">
-            <select class="select-tipo">
-                <option>Selecciona categoría</option>
-                <option>Electrónicos</option>
-                <option>Accesorios</option>
-                <option>Gaming</option>
+            <select class="select-tipo" id="filtro-categoria">
+                <option value="Todos">Selecciona categoría</option>
+                <option value="Electrónicos">Electrónicos</option>
+                <option value="Accesorios">Accesorios</option>
+                <option value="Gaming">Gaming</option>
+                <option value="OFICINA">OFICINA</option>
             </select>
         </div>
         <div class="lista-productos">
@@ -80,12 +87,11 @@
                 <p>OFICINA - Stock disponible</p>
                 <div class="precio-producto">99 BOB</div>
             </article>
-
         </div>
     </main>
+
     <footer>
         <div class="pie-contenido">
-
             <div class="pie-bloque">
                 <h4>Redes Sociales</h4>
                 <div class="iconos-redes">
@@ -95,21 +101,19 @@
                     <a href="#">ig</a>
                 </div>
             </div>
-
             <div class="pie-bloque">
                 <h4>Conócenos</h4>
                 <a href="#">Acerca de nosotros</a><br>
                 <a href="#">Trabaja con nosotros</a>
             </div>
-
             <div class="pie-bloque">
                 <h4>Soporte</h4>
                 <a href="#">Ayuda</a><br>
                 <a href="#">Contacto</a>
             </div>
-
         </div>
     </footer>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
