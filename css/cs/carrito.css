@@ -1,4 +1,4 @@
-      * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -14,10 +14,10 @@
         .barra-principal {
             background: #2c3e50;
             color: white;
-            padding: 15px 20px;
+            padding: 12px 20px;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
         .contenido-header {
@@ -29,8 +29,17 @@
         }
 
         .logo-tienda {
-            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 28px;
             font-weight: bold;
+        }
+
+        .logo-tienda img {
+            width: 70px;
+            height: auto;
+            border-radius: 8px;
         }
 
         #menu-toggle {
@@ -40,7 +49,7 @@
         .icono-menu {
             margin-right: 10px;
             cursor: pointer;
-            font-size: 24px;
+            font-size: 26px;
             display: none;
         }
 
@@ -52,10 +61,12 @@
         .links-menu a {
             color: white;
             text-decoration: none;
+            transition: 0.2s;
         }
 
         .links-menu a:hover {
             text-decoration: underline;
+            transform: scale(1.05);
         }
 
         .acciones-header a {
@@ -69,6 +80,7 @@
 
         .acciones-header a:hover {
             background: #2980b9;
+            transform: scale(1.05);
         }
 
         .menu-movil {
@@ -96,6 +108,12 @@
             }
             .links-menu {
                 display: none;
+            }
+            .logo-tienda {
+                font-size: 22px;
+            }
+            .logo-tienda img {
+                width: 50px;
             }
         }
 
@@ -148,6 +166,7 @@
             height: 90px;
             object-fit: cover;
             border-radius: 6px;
+            background: #f0f0f0;
         }
 
         .detalle-producto {
@@ -247,13 +266,27 @@
             color: #2c3e50;
         }
 
+        .carrusel-contenedor {
+            position: relative;
+            overflow: hidden;
+            padding: 0 50px;
+        }
+
         .grid-sugeridos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            display: flex;
             gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .grid-sugeridos::-webkit-scrollbar {
+            display: none;
         }
 
         .item-sugerido {
+            flex: 0 0 200px;
             text-align: center;
             padding: 15px;
             border: 1px solid #eee;
@@ -268,10 +301,17 @@
 
         .item-sugerido img {
             width: 100%;
-            height: 120px;
+            height: 150px;
             object-fit: cover;
             border-radius: 4px;
             margin-bottom: 10px;
+            background: #f0f0f0;
+        }
+
+        .item-sugerido h4 {
+            font-size: 14px;
+            margin-bottom: 8px;
+            min-height: 40px;
         }
 
         .precio-sugerido {
@@ -299,8 +339,40 @@
             transform: scale(1.1);
         }
 
-        .pie-pagina {
+        .flecha-carrusel {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             background: #2c3e50;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flecha-carrusel:hover {
+            background: #34495e;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .flecha-izquierda {
+            left: 5px;
+        }
+
+        .flecha-derecha {
+            right: 5px;
+        }
+
+        .pie-pagina {
+            background: #000000;
             color: white;
             padding: 40px 20px;
             margin-top: 60px;
@@ -328,13 +400,14 @@
         }
 
         .links-pie a {
-            color: #ecf0f1;
+            color: #bdc3c7;
             text-decoration: none;
             transition: 0.3s;
         }
 
         .links-pie a:hover {
-            text-decoration: underline;
+            color: white;
+            transform: translateX(4px);
         }
 
         .redes {
@@ -351,6 +424,8 @@
             border-radius: 50%;
             text-align: center;
             line-height: 35px;
+            color: white;
+            text-decoration: none;
             transition: 0.3s;
         }
 
@@ -378,8 +453,12 @@
                 margin-top: 10px;
             }
 
-            .grid-sugeridos {
-                grid-template-columns: repeat(2, 1fr);
+            .carrusel-contenedor {
+                padding: 0 40px;
+            }
+
+            .item-sugerido {
+                flex: 0 0 160px;
             }
 
             .contenido-pie {

@@ -1,4 +1,4 @@
-       * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -32,15 +32,15 @@
         .logo-sitio {
             display: flex;
             align-items: center;
-            gap: 10px; 
-            font-size: 20px;
+            gap: 15px; 
+            font-size: 28px;
             font-weight: bold;
         }
 
         .logo-sitio img {
-            width: 45px;  
+            width: 70px;  
             height: auto;
-            border-radius: 6px; 
+            border-radius: 8px; 
             animation: fadeDown 0.7s ease;
         }
 
@@ -129,12 +129,14 @@
             .menu-principal { 
                 display: none; 
             }
+            .logo-sitio {
+                font-size: 22px;
+            }
             .logo-sitio img {
-                width: 38px;
+                width: 50px;
             }
         }
 
-        /* ==================== PRESENTACIÓN ==================== */
         .seccion-presentacion {
             background: #34495e;
             color: white;
@@ -183,7 +185,7 @@
         }
 
         .logo-derecha img {
-            width: 150px;
+            width: 180px;
             height: auto;
             border-radius: 8px;
             animation: fadeDown 0.7s ease;
@@ -195,7 +197,7 @@
                 text-align: center;
             }
             .logo-derecha img {
-                width: 120px;
+                width: 140px;
                 margin-top: 20px;
             }
             .texto-presentacion h1 {
@@ -224,7 +226,9 @@
         }
 
         .select-tipo { 
-            padding: 8px; 
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
         }
 
         .lista-productos {
@@ -253,6 +257,7 @@
             object-fit: cover;
             border-radius: 4px;
             margin-bottom: 10px;
+            background: #f0f0f0;
         }
 
         .precio-producto {
@@ -331,6 +336,7 @@
             background: #1abc9c;
             transform: scale(1.1);
         }
+
         @keyframes fadeBody {
             0%   { opacity: 0; }
             100% { opacity: 1; }

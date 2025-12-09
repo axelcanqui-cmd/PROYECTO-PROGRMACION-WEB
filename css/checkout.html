@@ -6,123 +6,136 @@
 <meta name="description" content="Finaliza tu compra en QANATHI SHOP - Completa tus datos y recibe tus productos de forma rápida y segura.">
 <title>Finalizar Compra - QANATHI SHOP</title>
 <link rel="stylesheet" href="cs/checkout.css">
+<script src="js/checkout.js"></script>
 </head>
 
-<body>
-<header class="barra-principal">
-    <div class="contenido-barra">
-        <div class="titulo-barra">QANATHI SHOP</div>
-        <nav>
-            <ul class="menu-principal">
+ <div class="contenido-header">
+            <div class="logo">WAIT SHOP</div>
+            <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html">Productos</a></li>
                 <li><a href="carrito.html">Carrito</a></li>
             </ul>
-        </nav>
-    </div>
-</header>
-
-<main class="caja-general">
-    <h1 class="titulo-principal">Finalizar Compra</h1>
-
-    <form class="formulario-compra" action="#" method="post">
-        <fieldset class="seccion-datos">
-            <legend>Datos Personales</legend>
-            <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="campo">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" required>
-            </div>
-            <div class="campo">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="campo">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
-            <div class="campo">
-                <label for="documento">Documento de Identidad</label>
-                <input type="text" id="documento" name="documento" required>
-            </div>
-        </fieldset>
-
-        <fieldset class="seccion-datos">
-            <legend>Dirección de Envío</legend>
-            <div class="campo">
-                <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" name="direccion" required>
-            </div>
-            <div class="campo">
-                <label for="ciudad">Ciudad</label>
-                <input type="text" id="ciudad" name="ciudad" required>
-            </div>
-            <div class="campo">
-                <label for="estado">Estado/Provincia</label>
-                <input type="text" id="estado" name="estado" required>
-            </div>
-            <div class="campo">
-                <label for="codigo-postal">Código Postal</label>
-                <input type="text" id="codigo-postal" name="codigo-postal" required>
-            </div>
-            <div class="campo">
-                <label for="pais">País</label>
-                <select id="pais" name="pais" required>
-                    <option value="">Seleccione un país</option>
-                    <option value="bo">Bolivia</option>
-                    <option value="ar">Argentina</option>
-                    <option value="br">Brasil</option>
-                    <option value="cl">Chile</option>
-                    <option value="co">Colombia</option>
-                    <option value="mx">México</option>
-                    <option value="pe">Perú</option>
-                    <option value="us">Estados Unidos</option>
-                </select>
-            </div>
-            <div class="campo">
-                <label for="notas">Notas adicionales</label>
-                <textarea id="notas" name="notas" rows="3" placeholder="Instrucciones especiales para la entrega"></textarea>
-            </div>
-        </fieldset>
-
-        <fieldset class="seccion-datos">
-            <legend>Método de Pago</legend>
-            <div class="opciones-pago">
-                <div class="opcion-pago">
-                    <input type="radio" id="tarjeta" name="metodo-pago" value="tarjeta" checked>
-                    <label for="tarjeta">Tarjeta de Crédito/Débito</label>
-                </div>
-                <div class="opcion-pago">
-                    <input type="radio" id="transferencia" name="metodo-pago" value="transferencia">
-                    <label for="transferencia">Transferencia Bancaria</label>
-                </div>
-                <div class="opcion-pago">
-                    <input type="radio" id="efectivo" name="metodo-pago" value="efectivo">
-                    <label for="efectivo">Pago contra entrega</label>
-                </div>
-            </div>
-        </fieldset>
-
-        <div class="acciones-formulario">
-            <button type="submit" class="boton-confirmar">Confirmar Compra</button>
-            <a href="carrito.html" class="boton-volver">Volver al carrito</a>
         </div>
-    </form>
-</main>
+    </header>
 
-<footer class="pie-pagina">
-    <div class="contenido-pie">
-        <p>QANATHI SHOP &copy; 2025</p>
-        <nav class="redes-pie">
-            <a href="#" aria-label="Facebook">Facebook</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="YouTube">YouTube</a>
-            <a href="#" aria-label="Instagram">Instagram</a>
-        </nav>
+    <div class="contenedor">
+        <h1 class="titulo">Finalizar Compra</h1>
+
+        <div class="contenido">
+            <div class="formulario">
+                <form id="formulario-compra">
+                    <div class="seccion">
+                        <h3>Datos Personales</h3>
+                        <div class="dos-campos">
+                            <div class="campo">
+                                <label>Nombre:</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="campo">
+                                <label>Apellido:</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="dos-campos">
+                            <div class="campo">
+                                <label>Email:</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="campo">
+                                <label>Teléfono:</label>
+                                <input type="tel" required>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label>CI/Documento:</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="seccion">
+                        <h3>Dirección de Envío</h3>
+                        <div class="campo">
+                            <label>Dirección:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="dos-campos">
+                            <div class="campo">
+                                <label>Ciudad:</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="campo">
+                                <label>Departamento:</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="dos-campos">
+                            <div class="campo">
+                                <label>Código Postal:</label>
+                                <input type="text">
+                            </div>
+                            <div class="campo">
+                                <label>País:</label>
+                                <select required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="bo">Bolivia</option>
+                                    <option value="ar">Argentina</option>
+                                    <option value="br">Brasil</option>
+                                    <option value="cl">Chile</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label>Notas (opcional):</label>
+                            <textarea rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="seccion">
+                        <h3>Método de Pago</h3>
+                        <label class="metodo-pago">
+                            <input type="radio" name="pago" value="tarjeta" checked>
+                            Tarjeta de Crédito/Débito
+                        </label>
+                        <label class="metodo-pago">
+                            <input type="radio" name="pago" value="transferencia">
+                            Transferencia Bancaria
+                        </label>
+                        <label class="metodo-pago">
+                            <input type="radio" name="pago" value="efectivo">
+                            Pago contra entrega
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen del Pedido</h3>
+                <div id="lista-productos"></div>
+                <div class="totales">
+                    <div class="linea-total">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">0 BOB</span>
+                    </div>
+                    <div class="linea-total">
+                        <span>Envío:</span>
+                        <span>Gratis</span>
+                    </div>
+                    <div class="linea-total final">
+                        <span>Total:</span>
+                        <span id="total">0 BOB</span>
+                    </div>
+                </div>
+                <button type="submit" form="formulario-compra" class="boton-comprar">
+                    Confirmar Compra
+                </button>
+                <a href="carrito.html" class="boton-volver">Volver al carrito</a>
+            </div>
+        </div>
     </div>
-</footer>
+
+    <footer>
+        <p>WAIT SHOP &copy; 2025 - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
